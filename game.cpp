@@ -219,6 +219,7 @@ HRESULT Game::InitialiseGraphics()
 	
 	frameCount = 0;
 	second = 0.0f;
+	updateState = true;
 
 	return S_OK;
 }
@@ -260,6 +261,23 @@ void Game::Update(float deltaTime)
 	if (m_input->isKeyPressed(DIK_E))
 		m_camera->Up(m_camera->getSpeed()*deltaTime);
 
+	if (m_input->IsKeyPressedOnce(DIK_SPACE))
+		updateState = !updateState;
+
+	if (m_input->IsKeyPressedOnce(DIK_RIGHT))
+		m_particleGenerator->update(1.0f/60.0f);
+
+	if (m_input->IsKeyPressedOnce(DIK_LEFT))
+		m_particleGenerator->update(-1.0f / 60.0f);
+
+	if (m_input->IsKeyPressedOnce(DIK_C))
+		m_particleGenerator->spawnCube();
+
+	if (m_input->IsKeyPressedOnce(DIK_F))
+		m_particleGenerator->spawnParticle(ZeroVector3);
+
+	if (m_input->IsKeyPressedOnce(DIK_R))
+		m_particleGenerator->Reset();
 
 	if (m_input->getMouseData().leftClick && !m_input->getPrevMouseData().leftClick)
 	{
@@ -269,7 +287,8 @@ void Game::Update(float deltaTime)
 	pCounter += deltaTime;
 	if (pCounter >= 1.0f / 60.0f)
 	{
-		m_particleGenerator->update(pCounter);
+		if (updateState)
+			m_particleGenerator->update(pCounter);
 
 		pCounter = 0.0f;
 	}

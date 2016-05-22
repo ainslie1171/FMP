@@ -271,3 +271,156 @@ void ParticleGenerator::spawnParticle()
 		m_free.pop_front();
 	}
 }
+
+void ParticleGenerator::spawnCube()
+{
+	spawnParticle({ 0.0f, 0.0f, 0.0f });
+	spawnParticle({ 0.7f, 0.0f, 0.0f });
+	spawnParticle({ 1.4f, 0.0f, 0.0f });
+	spawnParticle({ -0.7f, 0.0f, 0.0f });
+	spawnParticle({ -1.4f, 0.0f, 0.0f });
+	spawnParticle({ 0.0f, 0.0f, 0.7f });
+	spawnParticle({ 0.0f, 0.0f, 1.4f });
+	spawnParticle({ 0.0f, 0.0f, -0.7f });
+	spawnParticle({ 0.0f, 0.0f, -1.4f });
+	spawnParticle({ 0.7f, 0.0f, 0.7f });
+	spawnParticle({ 0.7f, 0.0f, 1.4f });
+	spawnParticle({ 0.7f, 0.0f, -0.7f });
+	spawnParticle({ 0.7f, 0.0f, -1.4f });
+	spawnParticle({ -0.7f, 0.0f, 0.7f });
+	spawnParticle({ -0.7f, 0.0f, 1.4f });
+	spawnParticle({ -0.7f, 0.0f, -0.7f });
+	spawnParticle({ -0.7f, 0.0f, -1.4f });
+	spawnParticle({ 1.4f, 0.0f, 0.7f });
+	spawnParticle({ 1.4f, 0.0f, 1.4f });
+	spawnParticle({ 1.4f, 0.0f, -0.7f });
+	spawnParticle({ 1.4f, 0.0f, -1.4f });
+	spawnParticle({ -1.4f, 0.0f, 0.7f });
+	spawnParticle({ -1.4f, 0.0f, 1.4f });
+	spawnParticle({ -1.4f, 0.0f, -0.7f });
+	spawnParticle({ -1.4f, 0.0f, -1.4f });
+
+	spawnParticle({ 1.4f,  0.7f, 0.0f });
+	spawnParticle({ -1.4f, 0.7f, 0.0f });
+	spawnParticle({ 0.0f,  0.7f, 1.4f });
+	spawnParticle({ 0.0f,  0.7f, -1.4f });
+	spawnParticle({ 0.7f,  0.7f, 1.4f });
+	spawnParticle({ 0.7f,  0.7f, -1.4f });
+	spawnParticle({ -0.7f, 0.7f, 1.4f });
+	spawnParticle({ -0.7f, 0.7f, -1.4f });
+	spawnParticle({ 1.4f,  0.7f, 0.7f });
+	spawnParticle({ 1.4f,  0.7f, 1.4f });
+	spawnParticle({ 1.4f,  0.7f, -0.7f });
+	spawnParticle({ 1.4f,  0.7f, -1.4f });
+	spawnParticle({ -1.4f, 0.7f, 0.7f });
+	spawnParticle({ -1.4f, 0.7f, 1.4f });
+	spawnParticle({ -1.4f, 0.7f, -0.7f });
+	spawnParticle({ -1.4f, 0.7f, -1.4f });
+
+	spawnParticle({ 1.4f,  1.4f, 0.0f });
+	spawnParticle({ -1.4f, 1.4f, 0.0f });
+	spawnParticle({ 0.0f,  1.4f, 1.4f });
+	spawnParticle({ 0.0f,  1.4f, -1.4f });
+	spawnParticle({ 0.7f,  1.4f, 1.4f });
+	spawnParticle({ 0.7f,  1.4f, -1.4f });
+	spawnParticle({ -0.7f, 1.4f, 1.4f });
+	spawnParticle({ -0.7f, 1.4f, -1.4f });
+	spawnParticle({ 1.4f,  1.4f, 0.7f });
+	spawnParticle({ 1.4f,  1.4f, 1.4f });
+	spawnParticle({ 1.4f,  1.4f, -0.7f });
+	spawnParticle({ 1.4f,  1.4f, -1.4f });
+	spawnParticle({ -1.4f, 1.4f, 0.7f });
+	spawnParticle({ -1.4f, 1.4f, 1.4f });
+	spawnParticle({ -1.4f, 1.4f, -0.7f });
+	spawnParticle({ -1.4f, 1.4f, -1.4f });
+
+	spawnParticle({ 1.4f,  2.1f, 0.0f });
+	spawnParticle({ -1.4f, 2.1f, 0.0f });
+	spawnParticle({ 0.0f,  2.1f, 1.4f });
+	spawnParticle({ 0.0f,  2.1f, -1.4f });
+	spawnParticle({ 0.7f,  2.1f, 1.4f });
+	spawnParticle({ 0.7f,  2.1f, -1.4f });
+	spawnParticle({ -0.7f, 2.1f, 1.4f });
+	spawnParticle({ -0.7f, 2.1f, -1.4f });
+	spawnParticle({ 1.4f,  2.1f, 0.7f });
+	spawnParticle({ 1.4f,  2.1f, 1.4f });
+	spawnParticle({ 1.4f,  2.1f, -0.7f });
+	spawnParticle({ 1.4f,  2.1f, -1.4f });
+	spawnParticle({ -1.4f, 2.1f, 0.7f });
+	spawnParticle({ -1.4f, 2.1f, 1.4f });
+	spawnParticle({ -1.4f, 2.1f, -0.7f });
+	spawnParticle({ -1.4f, 2.1f, -1.4f });
+
+	spawnParticle({ 0.0f,	2.8f, 0.0f });
+	spawnParticle({ 0.7f,	2.8f, 0.0f });
+	spawnParticle({ 1.4f,	2.8f, 0.0f });
+	spawnParticle({ -0.7f,	2.8f, 0.0f });
+	spawnParticle({ -1.4f,	2.8f, 0.0f });
+	spawnParticle({ 0.0f,	2.8f, 0.7f });
+	spawnParticle({ 0.0f,	2.8f, 1.4f });
+	spawnParticle({ 0.0f,	2.8f, -0.7f });
+	spawnParticle({ 0.0f,	2.8f, -1.4f });
+	spawnParticle({ 0.7f,	2.8f, 0.7f });
+	spawnParticle({ 0.7f,	2.8f, 1.4f });
+	spawnParticle({ 0.7f,	2.8f, -0.7f });
+	spawnParticle({ 0.7f,	2.8f, -1.4f });
+	spawnParticle({ -0.7f,	2.8f, 0.7f });
+	spawnParticle({ -0.7f,	2.8f, 1.4f });
+	spawnParticle({ -0.7f,	2.8f, -0.7f });
+	spawnParticle({ -0.7f,	2.8f, -1.4f });
+	spawnParticle({ 1.4f,	2.8f, 0.7f });
+	spawnParticle({ 1.4f,	2.8f, 1.4f });
+	spawnParticle({ 1.4f,	2.8f, -0.7f });
+	spawnParticle({ 1.4f,	2.8f, -1.4f });
+	spawnParticle({ -1.4f,	2.8f, 0.7f });
+	spawnParticle({ -1.4f,	2.8f, 1.4f });
+	spawnParticle({ -1.4f,	2.8f, -0.7f });
+	spawnParticle({ -1.4f,	2.8f, -1.4f });
+
+
+}
+
+void ParticleGenerator::spawnParticle(Vector3 Pos)
+{
+	if (!m_free.empty())
+	{
+		p_Particle* p = m_free.front();
+		//set p values
+		p->Velocity = ZeroVector3;
+		p->Position = Pos;
+		p->scale = 0.3f;
+		p->Mass = 1.0f;
+		p->InvMass = 1 / p->Mass;
+		p->time = 0.0f;
+		p->checkColl = false;
+		p->c = Vector4(randomZeroToOne(), randomZeroToOne(), randomZeroToOne(), 1.0f);
+		bool result = false;
+		for (p_Particle* Pi : m_active)
+		{
+			if (p->betterCollisionCheck(*Pi, 1.0f / 60.0f)) result = true;
+		}
+		while (result)
+		{
+			result = false;
+			p->Position = { randomNegOneToPosOne() * 3.0f, randomZeroToOne() * 3.0f, randomNegOneToPosOne() * 3.0f };
+			for (p_Particle* Pi : m_active)
+			{
+				if (p->betterCollisionCheck(*Pi, 1.0f / 60.0f)) result = true;
+			}
+		}
+
+		m_active.push_back(p);
+		m_free.pop_front();
+	}
+}
+
+void ParticleGenerator::Reset()
+{
+	p_Particle* p = nullptr;
+	while (!m_active.empty())
+	{
+		p = m_active.front();
+		m_free.push_back(p);
+		m_active.pop_front();
+	}
+}

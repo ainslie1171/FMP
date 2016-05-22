@@ -41,6 +41,7 @@ private:
 	float second;
 	int frameCount;
 	float pCounter;
+	bool updateState;
 
 
 	//InitialiseGraphics

@@ -71,6 +71,8 @@ void Input::ReadInputStates()
 {
 	HRESULT hr;
 
+	memcpy(m_prevKeyboardKeysState, m_keyboardKeysState, sizeof(m_keyboardKeysState));
+
 	hr = m_keyboardDevice->GetDeviceState(sizeof(m_keyboardKeysState), (LPVOID)&m_keyboardKeysState);
 
 	if (FAILED(hr))
@@ -124,4 +126,9 @@ MouseData Input::getPrevMouseData()
 	md.centerClick = (m_prevMouseState.rgbButtons[2] & 0x80) != 0;
 	md.other = (m_prevMouseState.rgbButtons[3] & 0x80) != 0;
 	return md;
+}
+
+bool Input::IsKeyPressedOnce(UCHAR DI_keycode)
+{
+	return (((m_keyboardKeysState[DI_keycode] & 0x80)) && (!(m_prevKeyboardKeysState[DI_keycode] & 0x80) != 0)) ? true : false;
 }

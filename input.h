@@ -25,6 +25,7 @@ public:
 	~Input();
 	void ReadInputStates();
 	bool isKeyPressed(unsigned char DI_keycode);
+	bool IsKeyPressedOnce(UCHAR DI_keycode);
 	MouseData getMouseData();
 	MouseData getPrevMouseData();
 
@@ -35,6 +36,7 @@ private:
 	IDirectInputDevice8* m_keyboardDevice;
 	IDirectInputDevice8* m_mouseDevice;
 	unsigned char m_keyboardKeysState[256];
+	unsigned char m_prevKeyboardKeysState[256];
 	DIMOUSESTATE m_mouseState;
 	DIMOUSESTATE m_prevMouseState;
 };

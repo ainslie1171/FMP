@@ -55,5 +55,8 @@ public:
 	void drawP(RENDER_DESC2& desc);
 	void update(float dt);
 	void spawnParticle();
+	void spawnCube();
+	void spawnParticle(Vector3 Pos);
+	void Reset();
 };
 #endif
